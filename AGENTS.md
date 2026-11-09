@@ -74,6 +74,7 @@
 ├── CLAUDE.md          # 匯入 AGENTS.md（給 Claude Code 用）
 ├── README.md
 ├── emoji.md           # 表情符號複製用的參考連結
+├── scripts/           # 小工具（gemini_edit.py：用 Gemini 加工照片；requirements.txt）
 ├── input/             # 輸入：看 drama／anime 等記下來的素材
 │   ├── drama/         # 日劇、綜藝的台詞筆記
 │   │   └── <年季>_<作品名>.md   # 例：2026夏_さよならノワール.md
@@ -141,6 +142,7 @@
 - 我自己發出去的貼文（Discord、Instagram story 等），一個主題一個資料夾，內含企画／文案／`photos/`
 - 不是筆記，**不進複習題庫**
 - 資料夾與檔案格式以 `output/posts/.claude/skills/posts-format/SKILL.md` 為準，新增、改名、檢查時照那份做，規則不在這裡重複
+- 照片要去路人或調光時，照 `.claude/skills/gemini-photo-edit/SKILL.md` 做（用 `scripts/gemini_edit.py`）：原圖留在 `materials/`，加工結果經我確認才放進 `photos/`。Python 環境是專案根目錄的 `.venv/`（不進 git，依 `scripts/requirements.txt` 建立）
 
 ### `input/patterns.md`
 
